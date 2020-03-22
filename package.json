@@ -9,7 +9,7 @@
   "private": true,
   "scripts": {
     "dev": "next",
-    "build": "next build",
+    "build": "NODE_ENV='production' next build",
     "export": "next export"
   },
   "dependencies": {

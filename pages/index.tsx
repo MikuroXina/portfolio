@@ -1,5 +1,30 @@
 import {NextPage} from 'next';
 import Head from 'next/head';
+import {FC} from 'react';
+
+type ProgramItemProps = {
+  repo: string;
+  desc: string;
+};
+
+const RepoItem: FC<ProgramItemProps> = ({repo, desc}) => (
+  <>
+    <cite>
+      <a href={`https://github.com/MikuroXina/${repo}`}>{repo}</a>
+    </cite>{' '}
+    {desc}
+  </>
+);
+
+const RepoList: FC<{items: ProgramItemProps[]}> = ({items}) => (
+  <ul>
+    {items.map((item) => (
+      <li key={item.repo}>
+        <RepoItem {...item} />
+      </li>
+    ))}
+  </ul>
+);
 
 const Main: NextPage = () => (
   <>
@@ -58,51 +83,27 @@ const Main: NextPage = () => (
       <section>
         <h3>Programs</h3>
         Developing:
-        <ul>
-          <li>
-            <cite>
-              <a href="https://github.com/MikuroXina/xdraw">xdraw</a>
-            </cite>{' '}
-            The WebGL 3D engine based on both three.js and Unity.
-          </li>
-          <li>
-            <cite>
-              <a href="https://github.com/MikuroXina/bms-bounce">bms-bounce</a>
-            </cite>{' '}
-            The bouncer, convert BMS to WAV.
-          </li>
-          <li>
-            <cite>
-              <a href="https://github.com/MikuroXina/lua-js">lua-js</a>
-            </cite>{' '}
-            The Lua binding for JavaScript.
-          </li>
-        </ul>
+        <RepoList
+          items={[
+            {
+              repo: 'xdraw',
+              desc: 'The WebGL 3D engine based on both three.js and Unity.'
+            },
+            {repo: 'bms-bounce', desc: 'The bouncer, convert BMS to WAV.'},
+            {repo: 'lua-js', desc: 'The Lua binding for JavaScript.'}
+          ]}
+        />
         Old Games (they doesn't work well):
-        <ul>
-          <li>
-            <cite>
-              <a href="https://github.com/MikuroXina/Taiku-Ho-Ka">
-                Taiku-Ho-Ka
-              </a>
-            </cite>{' '}
-            The fixed point shooting game.
-          </li>
-          <li>
-            <cite>
-              <a href="https://github.com/MikuroXina/PullWall">PullWall</a>
-            </cite>{' '}
-            The dynamic maze.
-          </li>
-          <li>
-            <cite>
-              <a href="https://github.com/MikuroXina/CaseByeCase">
-                CaseByeCase
-              </a>
-            </cite>{' '}
-            The puzzle inspired by Machinarium.
-          </li>
-        </ul>
+        <RepoList
+          items={[
+            {
+              repo: 'Taiku-Ho-Ka',
+              desc: 'The fixed point shooting.'
+            },
+            {repo: 'PullWall', desc: 'The dynamic maze.'},
+            {repo: 'CaseByeCase', desc: 'The puzzle inspired by Machinarium.'}
+          ]}
+        />
       </section>
       <section>
         <h3>Musics</h3>
@@ -117,27 +118,25 @@ const Main: NextPage = () => (
       </section>
       <section>
         <h3>Books</h3>
-        <ul>
-          <li>
-            <cite>
-              <a href="https://github.com/MikuroXina/cpp-book">cpp-book</a>
-            </cite>{' '}
-            The C++ tutorial book in Japanese.
-          </li>
-        </ul>
+        <RepoList
+          items={[
+            {
+              repo: 'cpp-book',
+              desc: 'The C++ tutorial book in Japanese.'
+            }
+          ]}
+        />
       </section>
       <section>
         <h3>Miscs</h3>
-        <ul>
-          <li>
-            <cite>
-              <a href="https://github.com/MikuroXina/cherry-petals-theme">
-                cherry-petals-theme
-              </a>
-            </cite>{' '}
-            My favorite theme for VSCode.
-          </li>
-        </ul>
+        <RepoList
+          items={[
+            {
+              repo: 'cherry-petals-theme',
+              desc: 'My theme for VSCode.'
+            }
+          ]}
+        />
       </section>
     </article>
     <style jsx>{`

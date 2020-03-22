@@ -33,14 +33,16 @@ const Main: NextPage = () => (
         <h3>Skills</h3>
         <ul>
           <li>I can use</li>
-          <ul>
-            <li>C++</li>
-            <li>JavaScript</li>
-            <li>Python</li>
-            <li>Swift</li>
-            <li>TypeScript</li>
-            <li>Rust</li>
-          </ul>
+          <li>
+            <ul>
+              <li>C++</li>
+              <li>JavaScript</li>
+              <li>Python</li>
+              <li>Swift</li>
+              <li>TypeScript</li>
+              <li>Rust</li>
+            </ul>
+          </li>
           <li>Experienced in coding with a team, publishing web services.</li>
           <li>Capable of translate between English and Japanese</li>
           <li>Expert of Object Oriented Analysis and Design</li>
@@ -55,7 +57,7 @@ const Main: NextPage = () => (
       <h2>My Products</h2>
       <section>
         <h3>Programs</h3>
-        Recently:
+        Developing:
         <ul>
           <li>
             <cite>

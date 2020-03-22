@@ -1,7 +1,11 @@
 import {NextPage} from 'next';
+import Head from 'next/head';
 
 const Main: NextPage = () => (
   <>
+    <Head>
+      <title>Mikuro Xina's station</title>
+    </Head>
     <h1>Mikuro Xina</h1>
     <article>
       <h2>About</h2>

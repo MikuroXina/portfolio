@@ -87,21 +87,21 @@ const Main: NextPage = () => (
           items={[
             {
               repo: 'xdraw',
-              desc: 'The WebGL 3D engine based on both three.js and Unity.'
+              desc: 'The WebGL 3D engine based on both three.js and Unity.',
             },
             {repo: 'bms-bounce', desc: 'The bouncer, convert BMS to WAV.'},
-            {repo: 'lua-js', desc: 'The Lua binding for JavaScript.'}
+            {repo: 'lua-js', desc: 'The Lua binding for JavaScript.'},
           ]}
         />
-        Old Games (they doesn't work well):
+        Old Games (they don't work well):
         <RepoList
           items={[
             {
               repo: 'Taiku-Ho-Ka',
-              desc: 'The fixed point shooting.'
+              desc: 'The fixed point shooting.',
             },
             {repo: 'PullWall', desc: 'The dynamic maze.'},
-            {repo: 'CaseByeCase', desc: 'The puzzle inspired by Machinarium.'}
+            {repo: 'CaseByeCase', desc: 'The puzzle inspired by Machinarium.'},
           ]}
         />
       </section>
@@ -122,8 +122,8 @@ const Main: NextPage = () => (
           items={[
             {
               repo: 'cpp-book',
-              desc: 'The C++ tutorial book in Japanese.'
-            }
+              desc: 'The C++ tutorial book in Japanese.',
+            },
           ]}
         />
       </section>
@@ -133,8 +133,8 @@ const Main: NextPage = () => (
           items={[
             {
               repo: 'cherry-petals-theme',
-              desc: 'My theme for VSCode.'
-            }
+              desc: 'My theme for VSCode.',
+            },
           ]}
         />
       </section>

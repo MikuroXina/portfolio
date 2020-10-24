@@ -55,14 +55,14 @@ const Main: NextPage = () => (
           <RepoList
             items={[
               {
-                repo: 'xdraw',
-                desc: 'The WebGL 3D engine based on both three.js and Unity.',
+                repo: 'nyansphere',
+                desc: 'The programming education system.',
               },
               {repo: 'bms-bounce', desc: 'The bouncer, convert BMS to WAV.'},
               {repo: 'lua-js', desc: 'The Lua binding for JavaScript.'},
             ]}
           />
-          Old Games (they don't work well):
+          Old Games (they don't work well now):
           <RepoList
             items={[
               {
@@ -105,7 +105,7 @@ const Main: NextPage = () => (
             items={[
               {
                 repo: 'cherry-petals-theme',
-                desc: 'My theme for VSCode.',
+                desc: 'Own theme for VSCode.',
               },
             ]}
           />

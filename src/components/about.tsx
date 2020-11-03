@@ -1,4 +1,4 @@
-import {ReactNode} from 'react';
+import type {FC, ReactNode} from 'react';
 
 type Definition = {
   title: ReactNode;
@@ -26,7 +26,7 @@ const definitions = [
   },
 ];
 
-const define = ({title, def}: Definition) => (
+const Define: FC<Definition> = ({title, def}) => (
   <>
     <dt>{title}</dt>
     <dd>{def}</dd>
@@ -36,6 +36,6 @@ const define = ({title, def}: Definition) => (
 export const About = () => (
   <section>
     <h2>About</h2>
-    {definitions.map(define)}
+    {definitions.map((definition, i) => <Define key={i} {...definition} />)}
   </section>
 );

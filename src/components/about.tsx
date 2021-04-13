@@ -11,10 +11,6 @@ const definitions = [
     def: 'Mikuro Xina',
   },
   {
-    title: 'E-Mail',
-    def: 'ryosukadnak@gmail.com',
-  },
-  {
     title: 'GitHub',
     def: (
       <a href="https://github.com/MikuroXina">https://github.com/MikuroXina</a>

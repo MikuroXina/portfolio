@@ -1,7 +1,7 @@
-import {ReactNode} from 'react';
+import React, {ReactNode, Fragment} from 'react';
 
 type Definition = {
-  title: ReactNode;
+  title: string;
   def: ReactNode;
 };
 
@@ -27,10 +27,10 @@ const definitions = [
 ];
 
 const define = ({title, def}: Definition) => (
-  <>
+  <Fragment key={title}>
     <dt>{title}</dt>
     <dd>{def}</dd>
-  </>
+  </Fragment>
 );
 
 export const About = () => (

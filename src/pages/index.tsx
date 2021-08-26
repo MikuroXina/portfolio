@@ -108,8 +108,12 @@ const Main: NextPage = () => (
           <RepoList
             items={[
               {
-                repo: 'cherry-petals-theme',
-                desc: 'Own theme for VSCode.',
+                repo: 'yozakura-theme',
+                desc: 'Own dark theme for VSCode.',
+              },
+              {
+                repo: 'hazakura-theme',
+                desc: 'Own light theme for VSCode.',
               },
             ]}
           />

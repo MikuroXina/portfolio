@@ -55,6 +55,10 @@ const Main: NextPage = () => (
           <RepoList
             items={[
               {
+                repo: 'rich-sdl2-rust',
+                desc: 'The wrapper for SDL2.',
+              },
+              {
                 repo: 'nyansphere',
                 desc: 'The programming education system.',
               },

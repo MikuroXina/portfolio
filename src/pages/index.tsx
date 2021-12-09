@@ -32,7 +32,7 @@ const Main: NextPage = () => (
   <>
     <div className="container">
       <Head>
-        <title>Mikuro Xina's station</title>
+        <title>Mikuro Xina&apos;s station</title>
       </Head>
       <h1>Mikuro Xina</h1>
       <article>
@@ -66,7 +66,7 @@ const Main: NextPage = () => (
               {repo: 'lua-js', desc: 'The Lua binding for JavaScript.'},
             ]}
           />
-          Old Games (they don't work well now):
+          Old Games (they don&apos;t work well now):
           <RepoList
             items={[
               {

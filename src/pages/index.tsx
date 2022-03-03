@@ -42,10 +42,6 @@ const Main: NextPage = () => (
           To help that making tools to create some media.
         </section>
         <Skills />
-        <section>
-          <h3>Education</h3>
-          Enrolled in National Institute of Technology, Niihama College
-        </section>
       </article>
       <article>
         <h2>My Products</h2>

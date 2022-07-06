@@ -1,15 +1,15 @@
-import {NextPage} from 'next';
+import { NextPage } from 'next';
 import Head from 'next/head';
-import {FC} from 'react';
-import {About} from '../components/about';
-import {Skills} from '../components/skills';
+import { FC } from 'react';
+import { About } from '../components/about';
+import { Skills } from '../components/skills';
 
 type ProgramItemProps = {
   repo: string;
   desc: string;
 };
 
-const RepoItem: FC<ProgramItemProps> = ({repo, desc}) => (
+const RepoItem: FC<ProgramItemProps> = ({ repo, desc }) => (
   <>
     <cite>
       <a href={`https://github.com/MikuroXina/${repo}`}>{repo}</a>
@@ -18,7 +18,7 @@ const RepoItem: FC<ProgramItemProps> = ({repo, desc}) => (
   </>
 );
 
-const RepoList: FC<{items: ProgramItemProps[]}> = ({items}) => (
+const RepoList: FC<{ items: ProgramItemProps[] }> = ({ items }) => (
   <ul>
     {items.map((item) => (
       <li key={item.repo}>
@@ -32,9 +32,9 @@ const Main: NextPage = () => (
   <>
     <div className="container">
       <Head>
-        <title>Mikuro Xina&apos;s station</title>
+        <title>MikuroXina&apos;s station</title>
       </Head>
-      <h1>Mikuro Xina</h1>
+      <h1>MikuroXina</h1>
       <article>
         <About />
         <section>
@@ -58,8 +58,8 @@ const Main: NextPage = () => (
                 repo: 'nyansphere',
                 desc: 'The programming education system.',
               },
-              {repo: 'bms-bounce', desc: 'The bouncer, convert BMS to WAV.'},
-              {repo: 'lua-js', desc: 'The Lua binding for JavaScript.'},
+              { repo: 'bms-bounce', desc: 'The bouncer, convert BMS to WAV.' },
+              { repo: 'lua-js', desc: 'The Lua binding for JavaScript.' },
             ]}
           />
           Old Games (they don&apos;t work well now):
@@ -69,24 +69,13 @@ const Main: NextPage = () => (
                 repo: 'Taiku-Ho-Ka',
                 desc: 'The fixed point shooting.',
               },
-              {repo: 'PullWall', desc: 'The dynamic maze.'},
+              { repo: 'PullWall', desc: 'The dynamic maze.' },
               {
                 repo: 'CaseByeCase',
                 desc: 'The puzzle inspired by Machinarium.',
               },
             ]}
           />
-        </section>
-        <section>
-          <h3>Musics</h3>
-          <iframe
-            width="320"
-            height="160"
-            src="https://ext.nicovideo.jp/thumb_user/40015175"
-            scrolling="no"
-            style={{border: 'solid 1px #CCC'}}
-            frameBorder={0}
-          ></iframe>
         </section>
         <section>
           <h3>Books</h3>

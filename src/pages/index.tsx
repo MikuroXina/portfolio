@@ -1,7 +1,7 @@
-import { NextPage } from 'next';
-import Head from 'next/head';
-import { FC } from 'react';
 import { About } from '../components/about';
+import type { FC } from 'react';
+import Head from 'next/head';
+import type { NextPage } from 'next';
 import { Skills } from '../components/skills';
 
 type ProgramItemProps = {
@@ -59,7 +59,15 @@ const Main: NextPage = () => (
                 desc: 'The programming education system.',
               },
               { repo: 'bms-bounce', desc: 'The bouncer, convert BMS to WAV.' },
-              { repo: 'lua-js', desc: 'The Lua binding for JavaScript.' },
+              { repo: 'do-lua', desc: 'The Lua binding for JavaScript.' },
+              {
+                repo: 'PsdRename',
+                desc: 'The web tool for renaming layers of a PSD file for being available in PSDTool.',
+              },
+              {
+                repo: 'mini-fn',
+                desc: 'The minimal functional programming library.',
+              },
             ]}
           />
           Old Games (they don&apos;t work well now):

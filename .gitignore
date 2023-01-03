@@ -1,4 +1,15 @@
-node_modules
-.next
-.secrets
+# dependencies
+/node_modules
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
 
+# next.js
+.next
+
+# secrets
+.secrets

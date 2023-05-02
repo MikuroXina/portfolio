@@ -2,7 +2,6 @@ import { About } from '../components/about';
 import Head from 'next/head';
 import type { NextPage } from 'next';
 import { Skills } from '../components/skills';
-import './root.css';
 import style from './index.module.css';
 
 type ProgramItemProps = {

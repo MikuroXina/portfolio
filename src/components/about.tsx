@@ -1,4 +1,4 @@
-import React, { FC, ReactNode, Fragment } from 'react';
+import React, { ReactNode, Fragment } from 'react';
 
 type Definition = {
   title: string;
@@ -47,7 +47,7 @@ const definitions = [
   },
 ];
 
-const Define: FC<Definition> = ({ title, def }) => (
+const Define = ({ title, def }: Definition) => (
   <Fragment key={title}>
     <dt>{title}</dt>
     <dd>{def}</dd>

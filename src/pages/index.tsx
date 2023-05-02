@@ -1,5 +1,4 @@
 import { About } from '../components/about';
-import type { FC } from 'react';
 import Head from 'next/head';
 import type { NextPage } from 'next';
 import { Skills } from '../components/skills';
@@ -9,7 +8,7 @@ type ProgramItemProps = {
   desc: string;
 };
 
-const RepoItem: FC<ProgramItemProps> = ({ repo, desc }) => (
+const RepoItem = ({ repo, desc }: ProgramItemProps) => (
   <>
     <cite>
       <a href={`https://github.com/MikuroXina/${repo}`}>{repo}</a>
@@ -18,7 +17,7 @@ const RepoItem: FC<ProgramItemProps> = ({ repo, desc }) => (
   </>
 );
 
-const RepoList: FC<{ items: ProgramItemProps[] }> = ({ items }) => (
+const RepoList = ({ items }: { items: ProgramItemProps[] }) => (
   <ul>
     {items.map((item) => (
       <li key={item.repo}>

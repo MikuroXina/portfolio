@@ -1,4 +1,4 @@
-import React, { FC, ReactNode, Fragment } from 'react';
+import React, { ReactNode, Fragment } from 'react';
 
 type Definition = {
   title: string;
@@ -27,9 +27,7 @@ const definitions = [
         width="320"
         height="160"
         src="https://ext.nicovideo.jp/thumb_user/40015175"
-        scrolling="no"
-        style={{ border: 'solid 1px #CCC' }}
-        frameBorder="0"
+        style={{ border: 'solid 1px #CCC', overflow: 'hidden' }}
       >
         Mikuroさいな(Xina)
       </iframe>
@@ -39,15 +37,14 @@ const definitions = [
     title: 'Bandcamp',
     def: (
       <iframe
-        scrolling="no"
-        style={{ border: 0, width: '100%', height: 33 }}
+        style={{ border: 0, width: '100%', height: 33, overflow: 'hidden' }}
         src="https://bandcamp.com/band_follow_button_classic/12456850"
       ></iframe>
     ),
   },
 ];
 
-const Define: FC<Definition> = ({ title, def }) => (
+const Define = ({ title, def }: Definition) => (
   <Fragment key={title}>
     <dt>{title}</dt>
     <dd>{def}</dd>

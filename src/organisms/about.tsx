@@ -32,7 +32,7 @@ const definitions = [
     title: 'niconico',
     def: (
       <ExternalLink href="https://www.nicovideo.jp/user/40015175">
-        Mikuroさいな(Xina)
+        Mikuroさいな(Xina) videos
       </ExternalLink>
     ),
   },
@@ -41,6 +41,22 @@ const definitions = [
     def: (
       <ExternalLink href="https://mikuroxina.bandcamp.com/">
         Musics powered by Bandcamp
+      </ExternalLink>
+    ),
+  },
+  {
+    title: 'AtCoder',
+    def: (
+      <ExternalLink href="https://atcoder.jp/users/MikuroXina">
+        Competitive programming stats on AtCoder
+      </ExternalLink>
+    ),
+  },
+  {
+    title: 'Qiita',
+    def: (
+      <ExternalLink href="https://qiita.com/MikuroXina">
+        Tech posts on Qiita
       </ExternalLink>
     ),
   },

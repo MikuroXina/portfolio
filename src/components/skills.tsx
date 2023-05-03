@@ -8,8 +8,8 @@ const learnedLaungages = [
 ];
 
 export const Skills = () => (
-  <section>
-    <h3>Skills</h3>
+  <article>
+    <h2>Skills</h2>
     <ul>
       <li>I can use:</li>
       <li>
@@ -23,5 +23,5 @@ export const Skills = () => (
       <li>Capable of translate between English and Japanese</li>
       <li>Expert of Object Oriented Analysis and Design</li>
     </ul>
-  </section>
+  </article>
 );

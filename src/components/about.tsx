@@ -52,10 +52,10 @@ const Define = ({ title, def }: Definition) => (
 );
 
 export const About = () => (
-  <section>
+  <article>
     <h2>About</h2>
     {definitions.map((definition, i) => (
       <Define key={i} {...definition} />
     ))}
-  </section>
+  </article>
 );

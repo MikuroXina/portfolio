@@ -1,5 +1,6 @@
 import React, { ReactNode, Fragment } from 'react';
 import { ExternalLink } from '../molecules/external-link';
+import style from './about.module.css';
 
 type Definition = {
   title: string;
@@ -9,7 +10,7 @@ type Definition = {
 const definitions = [
   {
     title: 'Name',
-    def: 'MikuroXina',
+    def: 'Mikuroさいな',
   },
   {
     title: 'GitHub',
@@ -30,23 +31,17 @@ const definitions = [
   {
     title: 'niconico',
     def: (
-      <iframe
-        width="320"
-        height="160"
-        src="https://ext.nicovideo.jp/thumb_user/40015175"
-        style={{ border: 'solid 1px #CCC', overflow: 'hidden' }}
-      >
+      <ExternalLink href="https://www.nicovideo.jp/user/40015175">
         Mikuroさいな(Xina)
-      </iframe>
+      </ExternalLink>
     ),
   },
   {
     title: 'Bandcamp',
     def: (
-      <iframe
-        style={{ border: 0, width: '100%', height: 33, overflow: 'hidden' }}
-        src="https://bandcamp.com/band_follow_button_classic/12456850"
-      ></iframe>
+      <ExternalLink href="https://mikuroxina.bandcamp.com/">
+        Musics powered by Bandcamp
+      </ExternalLink>
     ),
   },
 ];
@@ -61,8 +56,19 @@ const Define = ({ title, def }: Definition) => (
 export const About = () => (
   <article>
     <h2>About</h2>
-    {definitions.map((definition, i) => (
-      <Define key={i} {...definition} />
-    ))}
+    <div className={style.card}>
+      <img
+        className={style.icon}
+        src="/icon.png"
+        alt="A cute icon"
+        width="128"
+        height="128"
+      />
+      <div className={style.defRow}>
+        {definitions.map((definition, i) => (
+          <Define key={i} {...definition} />
+        ))}
+      </div>
+    </div>
   </article>
 );

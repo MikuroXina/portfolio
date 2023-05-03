@@ -1,0 +1,14 @@
+.card {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.icon {
+  border-radius: 50%;
+}
+
+.defRow {
+  display: flex;
+  flex-direction: column;
+}

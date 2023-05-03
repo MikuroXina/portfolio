@@ -1,4 +1,5 @@
 import React, { ReactNode, Fragment } from 'react';
+import { ExternalLink } from '../molecules/external-link';
 
 type Definition = {
   title: string;
@@ -13,12 +14,18 @@ const definitions = [
   {
     title: 'GitHub',
     def: (
-      <a href="https://github.com/MikuroXina">https://github.com/MikuroXina</a>
+      <ExternalLink href="https://github.com/MikuroXina">
+        https://github.com/MikuroXina
+      </ExternalLink>
     ),
   },
   {
     title: 'Twitter',
-    def: <a href="https://twitter.com/MikuroXina">@MikuroXina</a>,
+    def: (
+      <ExternalLink href="https://twitter.com/MikuroXina">
+        @MikuroXina
+      </ExternalLink>
+    ),
   },
   {
     title: 'niconico',

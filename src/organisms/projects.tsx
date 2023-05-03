@@ -1,3 +1,5 @@
+import { ExternalLink } from '../molecules/external-link';
+
 type ProgramItemProps = {
   repo: string;
   desc: string;
@@ -6,7 +8,9 @@ type ProgramItemProps = {
 const RepoItem = ({ repo, desc }: ProgramItemProps) => (
   <>
     <cite>
-      <a href={`https://github.com/MikuroXina/${repo}`}>{repo}</a>
+      <ExternalLink href={`https://github.com/MikuroXina/${repo}`}>
+        {repo}
+      </ExternalLink>
     </cite>{' '}
     {desc}
   </>

@@ -1,4 +1,4 @@
-const learnedLaungages = [
+const learnedLanguages = [
   'C++',
   'JavaScript',
   'Python',
@@ -14,7 +14,7 @@ export const Skills = () => (
       <li>I can use:</li>
       <li>
         <ul>
-          {learnedLaungages.map((lang, i) => (
+          {learnedLanguages.map((lang, i) => (
             <li key={i}>{lang}</li>
           ))}
         </ul>

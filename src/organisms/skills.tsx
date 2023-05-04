@@ -1,20 +1,13 @@
-const learnedLanguages = [
-  'C++',
-  'JavaScript',
-  'Python',
-  'Swift',
-  'TypeScript',
-  'Rust',
-];
+const usingLangs = ['C++', 'TypeScript', 'JavaScript', 'Rust', 'Python'];
 
 export const Skills = () => (
   <article>
     <h2>Skills</h2>
     <ul>
-      <li>I can use:</li>
+      <li>I frequently use:</li>
       <li>
         <ul>
-          {learnedLanguages.map((lang, i) => (
+          {usingLangs.map((lang, i) => (
             <li key={i}>{lang}</li>
           ))}
         </ul>

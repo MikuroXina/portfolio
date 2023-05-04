@@ -10,6 +10,11 @@ const Main: NextPage = () => (
   <div className={style.container}>
     <Head>
       <title>MikuroXina&apos;s station</title>
+      <meta
+        name="description"
+        content="MikuroXina is not only a programmer but also does something more..."
+      />
+      <meta name="theme-color" content="#191d19" />
     </Head>
     <h1>MikuroXina</h1>
     <About />

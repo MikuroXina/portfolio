@@ -48,9 +48,8 @@ export const Vision = () => (
           Approvers.
         </li>
         <li>
-          <span className={style.year}>2021</span>Learned about functional
-          programming. Gained TOEIC score 625 points. Gained Advanced Beginner
-          on PAST examination.
+          <span className={style.year}>2021</span>Learned about Haskell, Scala
+          and functional programming.
         </li>
         <li>
           <span className={style.year}>2022</span>Created Discord bots and

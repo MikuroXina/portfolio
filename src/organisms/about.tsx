@@ -75,7 +75,7 @@ export const About = () => (
     <div className={style.card}>
       <img
         className={style.icon}
-        src="/icon.png"
+        src="./icon.png"
         alt="A cute icon"
         width="128"
         height="128"

@@ -13,8 +13,8 @@ export const Skills = () => (
         </ul>
       </li>
       <li>Experienced in coding with a team, publishing web services.</li>
-      <li>Capable of translate between English and Japanese</li>
-      <li>Expert of Object Oriented Analysis and Design</li>
+      <li>Capable of translate from English to Japanese</li>
+      <li>Expert of Software Analysis and Design with OOP and FP</li>
     </ul>
   </article>
 );

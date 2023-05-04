@@ -63,10 +63,10 @@ const definitions = [
 ];
 
 const Define = ({ title, def }: Definition) => (
-  <Fragment key={title}>
+  <>
     <dt>{title}</dt>
     <dd>{def}</dd>
-  </Fragment>
+  </>
 );
 
 export const About = () => (

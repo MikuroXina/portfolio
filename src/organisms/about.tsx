@@ -80,11 +80,11 @@ export const About = () => (
         width="128"
         height="128"
       />
-      <div className={style.defRow}>
+      <dl className={style.defRow}>
         {definitions.map((definition, i) => (
           <Define key={i} {...definition} />
         ))}
-      </div>
+      </dl>
     </div>
   </article>
 );

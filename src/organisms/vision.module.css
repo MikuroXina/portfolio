@@ -1,7 +1,7 @@
 .copy {
   font-size: 2.5rem;
   font-weight: bold;
-  color: #eee;
+  color: var(--md-sys-color-on-primary-container);
   margin: 0.5rem 0;
 }
 
@@ -13,7 +13,7 @@
 
 .timeline > li {
   list-style: none;
-  background-color: #333;
+  background-color: var(--md-sys-color-primary-container);
   border-radius: 4px;
   margin: 0.25rem 0;
   padding: 0.1rem;
@@ -22,6 +22,6 @@
 .year {
   font-family: monospace;
   font-size: 0.7rem;
-  color: #ccc;
+  color: var(--md-sys-color-on-primary-container);
   margin-right: 4ch;
 }

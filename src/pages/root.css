@@ -10,3 +10,7 @@ a {
 a:visited {
   color: var(--md-sys-color-tertiary);
 }
+
+li:not(:first-child) {
+  margin-top: 8px;
+}

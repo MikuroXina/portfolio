@@ -1,0 +1,19 @@
+{
+  "automerge": true,
+  "major": {
+    "automerge": false
+  },
+  "platformAutomerge": true,
+  "prConcurrentLimit": 5,
+  "dependencyDashboard": true,
+  "enabledManagers": ["npm", "github-actions"],
+  "npm": {
+    "stabilityDays": 3
+  },
+  "vulnerabilityAlerts": {
+    "enabled": true,
+    "automerge": true,
+  },
+  "extends": [":timezone(Asia/Tokyo)"],
+  "schedule": ["on the first day of the week"]
+}

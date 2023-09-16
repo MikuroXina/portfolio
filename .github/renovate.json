@@ -12,7 +12,7 @@
   },
   "vulnerabilityAlerts": {
     "enabled": true,
-    "automerge": true,
+    "automerge": true
   },
   "extends": [":timezone(Asia/Tokyo)"],
   "schedule": ["on the first day of the week"]

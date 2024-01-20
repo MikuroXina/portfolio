@@ -1,3 +1,6 @@
-module.exports = {
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/portfolio' : '/',
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  output: "export",
 };
+
+module.exports = nextConfig;

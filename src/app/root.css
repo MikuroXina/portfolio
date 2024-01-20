@@ -14,3 +14,9 @@ a:visited {
 li:not(:first-child) {
   margin-top: 8px;
 }
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}

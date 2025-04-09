@@ -18,14 +18,13 @@ export const Skills = () => (
       <h3>Frequently Using Technologies</h3>
       <ul>
         <li>
-          <ExternalLink href="https://nextjs.org/">
-            Next.js - The simple web framework with React.
+          <ExternalLink href="https://hono.dev/">
+            Hono - The lightweight web server.
           </ExternalLink>
         </li>
         <li>
-          <ExternalLink href="https://tauri.app/">
-            Tauri - The cross-platform desktop app framework with Rust and
-            Webview.
+          <ExternalLink href="https://reactrouter.com/">
+            React Router - The framework for widget-like web app.
           </ExternalLink>
         </li>
         <li>
@@ -40,7 +39,7 @@ export const Skills = () => (
       <ul>
         <li>System Integration</li>
         <li>Static Code Analysis</li>
-        <li>New Database Management System</li>
+        <li>Model Checking</li>
         <li>Mathematical Model of Memory Safety</li>
       </ul>
     </section>

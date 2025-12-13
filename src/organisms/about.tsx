@@ -73,6 +73,7 @@ export const About = () => (
   <article>
     <h2>About</h2>
     <div className={style.card}>
+      {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
         className={style.icon}
         src="https://github.com/MikuroXina.png"

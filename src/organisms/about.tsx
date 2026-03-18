@@ -32,7 +32,15 @@ const definitions = [
     title: 'niconico',
     def: (
       <ExternalLink href="https://www.nicovideo.jp/user/40015175">
-        Mikuroさいな(Xina) videos
+        Mikuroさいな videos
+      </ExternalLink>
+    ),
+  },
+  {
+    title: "YouTube",
+    def: (
+      <ExternalLink href="https://www.youtube.com/channel/UCMfAnSrOguPzRWIyRNOMy9w">
+        Mikuroさいな video archives
       </ExternalLink>
     ),
   },

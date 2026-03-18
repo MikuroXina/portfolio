@@ -55,16 +55,17 @@ export const Vision = () => (
           <span className={style.year}>2022</span>Created Discord bots and
           functional programming library in TypeScript.
         </li>
+        <li>
+          <span className={style.year}>2025</span>Graduated Ehime University.
+        </li>
       </ol>
     </section>
     <section>
       <h3>Current Goals</h3>
       <ul>
-        <li>
-          Gain a qualification &quot;Fundamental Information Technology Engineer
-          Examination&quot;
-        </li>
         <li>Reach to the cyan rating in AtCoder.</li>
+        <li>Achieve some wins in an IT competition.</li>
+        <li>Promote a functional programming tech stack for TypeScript.</li>
         <li>Get practical experience in business.</li>
       </ul>
     </section>

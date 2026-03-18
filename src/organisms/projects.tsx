@@ -24,6 +24,10 @@ const Repos = ({ repos }: { repos: readonly RepoItemProps[] }) => (
 
 const myActiveRepos: readonly RepoItemProps[] = [
   {
+    repo: 'MikuroXina/bemuse',
+    desc: 'The fork version of Bemuse.',
+  },
+  {
     repo: 'approvers/OreOreBot2',
     desc: 'The multipurpose Discord bot with TypeScript.',
   },
@@ -34,10 +38,6 @@ const myActiveRepos: readonly RepoItemProps[] = [
   {
     repo: 'MikuroXina/hazakura-theme',
     desc: 'The light color theme with my favorite color scheme for Visual Studio Code.',
-  },
-  {
-    repo: 'MikuroXina/rich-sdl2-rust',
-    desc: 'The wrapper and binding library for SDL2 in Rust.',
   },
   {
     repo: 'MikuroXina/bms-rs',
@@ -59,6 +59,13 @@ const myActiveRepos: readonly RepoItemProps[] = [
     repo: 'MikuroXina/PsdRename',
     desc: 'The tool for renaming layers in your PSD files for PSDTool.',
   },
+];
+
+const myInactiveRepos: readonly RepoItemProps[] = [
+  {
+    repo: 'MikuroXina/rich-sdl2-rust',
+    desc: 'The wrapper and binding library for SDL2 in Rust.',
+  },
   {
     repo: 'MikuroXina/bemake',
     desc: 'The BMS editor with Tauri framework.',
@@ -67,9 +74,6 @@ const myActiveRepos: readonly RepoItemProps[] = [
     repo: 'MikuroXina/gem-knight',
     desc: 'The bot player for Splendor, the board game.',
   },
-];
-
-const myInactiveRepos: readonly RepoItemProps[] = [
   {
     repo: 'MikuroXina/aviutl-plugin-rs',
     desc: 'The plugin framework for AviUtl in Rust.',

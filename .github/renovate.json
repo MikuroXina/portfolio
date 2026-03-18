@@ -8,7 +8,7 @@
   "dependencyDashboard": true,
   "enabledManagers": ["npm", "github-actions"],
   "npm": {
-    "stabilityDays": 3
+    "minimumReleaseAge": "3 days"
   },
   "vulnerabilityAlerts": {
     "enabled": true,

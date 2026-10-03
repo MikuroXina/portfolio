@@ -19,7 +19,7 @@
     "next": "^16.1.7",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "typescript": "^6.0.0"
+    "typescript": "^7.0.0"
   },
   "devDependencies": {
     "@babel/core": "^8.0.0",
